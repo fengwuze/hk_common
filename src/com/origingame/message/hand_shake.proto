@@ -1,0 +1,10 @@
+package com.origingame.message;
+
+import "basemsg.proto";
+
+option java_outer_classname = "HandShakeProtos";
+
+
+message HandShakeReq {
+    required bytes keys = 1;
+}

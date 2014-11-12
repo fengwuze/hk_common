@@ -1,0 +1,25 @@
+package com.origingame.message;
+
+option java_outer_classname = "BaseMsgProtos";
+
+message RequestMsg {
+    required string message_type = 1;
+    required bytes message = 2;
+    optional string session_key = 3;
+    optional int64 player_id = 4;
+}
+
+message ResponseMsg {
+    optional string message_type = 1;
+    optional bytes message = 2;
+    required ResponseStatus status = 3;
+    optional string msg = 4;
+}
+
+enum ResponseStatus {
+    SUCCESS = 0;
+    UNKNOWN_ERROR = 1;
+
+    USERNAME_NOT_EXIST = 1000;
+    PASSWORD_INCORRECT = 1001;
+}
