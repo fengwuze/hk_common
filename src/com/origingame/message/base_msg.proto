@@ -5,8 +5,8 @@ option java_outer_classname = "BaseMsgProtos";
 message RequestMsg {
     required string message_type = 1;
     required bytes message = 2;
-    optional string session_key = 3;
-    optional int64 player_id = 4;
+    optional int32 player_id = 3;
+    optional string device_id = 4;
 }
 
 message ResponseMsg {
