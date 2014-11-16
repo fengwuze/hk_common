@@ -19,6 +19,7 @@ message ResponseMsg {
 enum ResponseStatus {
     SUCCESS = 0;
     UNKNOWN_ERROR = 1;
+    NO_ACTION_FOR_MESSAGE_TYPE = 2;
 
     USERNAME_NOT_EXIST = 1000;
     PASSWORD_INCORRECT = 1001;
