@@ -8,4 +8,4 @@ set OUT_BASEDIR=C:/Users/Liub/workspace/hk_gameserver
 set SRC_PATH=%SRC_BASEDIR%/src/com/origingame
 set OUT_PATH=%OUT_BASEDIR%/src/main/java
 
-protoc --proto_path=%SRC_PATH% --java_out=%OUT_PATH% %SRC_PATH%/message/*.proto
+protoc --proto_path=%SRC_PATH% --java_out=%OUT_PATH% %SRC_PATH%/message/*.proto %SRC_PATH%/server/model/*.proto

@@ -1,0 +1,13 @@
+package com.origingame.server.model;
+
+option java_outer_classname = "GameSessionProtos";
+
+message GameSessionModel {
+    optional int32 id = 1;
+    optional bytes password_key = 2;
+    optional bytes public_key = 3;
+    optional int32 player_id = 4;
+    optional int64 last_time = 5;
+    optional int32 last_id = 6;
+    optional string device_id = 7;
+}
