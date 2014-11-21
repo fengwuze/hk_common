@@ -1,0 +1,8 @@
+package com.origingame.message;
+
+option java_outer_classname = "EchoProtos";
+
+
+message Echo {
+    required string message = 1;
+}
