@@ -1,0 +1,20 @@
+package com.origingame.model;
+
+option java_outer_classname = "PlayerModelProtos";
+
+import "model/player_property.proto";
+import "model/player_item.proto";
+
+message PlayerModel {
+
+    required int32 id = 1;
+
+    required PlayerProperty property = 2;
+
+
+
+
+
+    repeated PlayerItem items = 21;
+
+}

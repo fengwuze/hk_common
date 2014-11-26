@@ -1,4 +1,4 @@
-package com.origingame.server.model;
+package com.origingame.persist;
 
 option java_outer_classname = "GameSessionProtos";
 

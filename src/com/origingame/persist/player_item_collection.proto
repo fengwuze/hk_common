@@ -1,0 +1,9 @@
+package com.origingame.persist;
+
+option java_outer_classname = "PlayerItemCollectionProtos";
+
+import "model/player_item.proto";
+
+message PlayerItemCollection {
+    repeated model.PlayerItem items = 1;
+}

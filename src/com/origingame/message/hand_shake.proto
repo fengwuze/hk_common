@@ -1,7 +1,5 @@
 package com.origingame.message;
 
-import "message/base_msg.proto";
-
 option java_outer_classname = "HandShakeProtos";
 
 
