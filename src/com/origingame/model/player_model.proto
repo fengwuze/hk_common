@@ -7,9 +7,9 @@ import "model/player_item.proto";
 
 message PlayerModel {
 
-    required int32 id = 1;
+    optional int32 id = 1;
 
-    required PlayerProperty property = 2;
+    optional PlayerProperty property = 2;
 
 
 

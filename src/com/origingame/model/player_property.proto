@@ -3,7 +3,7 @@ package com.origingame.model;
 option java_outer_classname = "PlayerPropertyProtos";
 
 message PlayerProperty {
-    required int32 id = 1;
+    optional int32 id = 1;
     optional string username = 2;
     optional string nickname = 3;
     optional int32 level = 4;
@@ -11,6 +11,9 @@ message PlayerProperty {
     optional int32 max_vit = 6;
     optional int32 gold = 7;
     optional int32 gem = 8;
-    optional string unique_id = 9;
+    optional string outer_id = 9;
+    optional string password = 10;
+    optional int32 session_id = 11;
+    optional int64 last_login_time = 12;
 
 }

@@ -1,0 +1,15 @@
+package com.origingame.message;
+
+option java_outer_classname = "PlayerEchoProtos";
+
+
+message PlayerEchoReq {
+    required string message = 1;
+}
+
+message PlayerEchoResp {
+    required string message = 1;
+    required int32 player_id = 2;
+    required string username = 3;
+    required string password = 4;
+}

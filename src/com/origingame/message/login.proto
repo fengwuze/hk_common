@@ -1,0 +1,16 @@
+package com.origingame.message;
+
+option java_outer_classname = "LoginProtos";
+
+import "model/player_model.proto";
+
+
+message LoginReq {
+    optional string username = 1;
+    optional string password = 2;
+}
+
+message LoginResp {
+    optional int32 player_id = 1;
+    optional model.PlayerModel player = 2;
+}

@@ -1,0 +1,17 @@
+package com.origingame.message;
+
+option java_outer_classname = "RegisterProtos";
+
+
+message RegisterReq {
+    optional bool trial = 1;
+    optional string username = 2;
+    optional string password = 3;
+}
+
+message RegisterResp {
+    optional int32 player_id = 1;
+    optional string username = 2;
+    //如果trial为false, password为空
+    optional string password = 3;
+}
