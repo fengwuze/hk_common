@@ -12,4 +12,5 @@ message PlayerEchoResp {
     required int32 player_id = 2;
     required string username = 3;
     required string password = 4;
+    optional int32 count = 5;
 }
